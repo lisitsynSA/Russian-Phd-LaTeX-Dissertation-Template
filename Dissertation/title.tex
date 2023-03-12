@@ -1,11 +1,11 @@
 % Титульный лист (ГОСТ Р 7.0.11-2001, 5.1)
 \thispagestyle{empty}
 \begin{center}
-\thesisOrganization
+\textbf{\thesisOrganization}
 \end{center}
 %
 \vspace{0pt plus4fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-\IfFileExists{images/logo.pdf}{
+\IfFileExists{images/logo.png}{
   \begin{minipage}[b]{0.5\linewidth}
     \begin{flushleft}
       \includegraphics[height=3.5cm]{logo}
@@ -13,21 +13,20 @@
   \end{minipage}%
   \begin{minipage}[b]{0.5\linewidth}
     \begin{flushright}
-      На правах рукописи\\
-%      \textsl {УДК \thesisUdk}
+      \textbf{\textit{На правах рукописи}}\\
+      \textsl {УДК 004.4'416}
     \end{flushright}
   \end{minipage}
 }{
 \begin{flushright}
-На правах рукописи
-
-%\textsl {УДК \thesisUdk}
+      \textbf{\textit{На правах рукописи}}\\
+      \textsl {УДК 004.4'416}
 \end{flushright}
 }
 %
-\vspace{0pt plus6fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+\vspace{0pt plus5fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
 \begin{center}
-{\large \thesisAuthor}
+{\large \textbf{\thesisAuthor}}
 \end{center}
 %
 \vspace{0pt plus1fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
@@ -37,23 +36,21 @@
 
 \vspace{0pt plus2fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
 {%\small
-Специальность \thesisSpecialtyNumber\ "---
-
-<<\thesisSpecialtyTitle>>
+\textbf{Специальность: \thesisSpecialtyNumber\ "---} \textbf{<<\thesisSpecialtyTitle>>}
 }
 
 \ifdefined\thesisSpecialtyTwoNumber
 {%\small
-Специальность \thesisSpecialtyTwoNumber\ "---
+Специальность: \thesisSpecialtyTwoNumber\ "---
 
 <<\thesisSpecialtyTwoTitle>>
 }
 \fi
 
 \vspace{0pt plus2fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-Диссертация на соискание учёной степени
+\textbf{ДИССЕРТАЦИЯ \\ на соискание учёной степени}
 
-\thesisDegree
+\textbf{\thesisDegree}
 \end{center}
 %
 \vspace{0pt plus4fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
@@ -77,7 +74,7 @@
 \supervisorTwoFio
 \fi
 \else
-Научный руководитель:
+\textbf{Научный руководитель:}
 
 \supervisorRegalia
 
@@ -91,4 +88,4 @@
 \end{flushright}
 %
 \vspace{0pt plus4fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-{\centering\thesisCity\ "--- \thesisYear\par}
+{\centering\textbf{\thesisCity\ "--- \thesisYear}\par}

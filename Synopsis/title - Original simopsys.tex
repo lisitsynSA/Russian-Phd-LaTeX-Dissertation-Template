@@ -1,0 +1,107 @@
+\thispagestyle{empty}
+
+\noindent%
+\begin{tabularx}{\textwidth}{@{}lXr@{}}%
+    & & \large{\textbf{\textit{На правах рукописи}}}\\
+    & & \large{\textsl {УДК 004.4'416}}\\
+    \IfFileExists{images/logo.png}{\includegraphics[height=2.5cm]{logo}}{\rule[0pt]{0pt}{2.5cm}}  & &
+    \ifnumequal{\value{showperssign}}{0}{%
+        \rule[0pt]{0pt}{1.5cm}
+    }\\
+\end{tabularx}
+
+\vspace{0pt plus3fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+\begin{center}
+\textbf {\large \thesisAuthor}
+\end{center}
+
+\vspace{0pt plus1fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+
+\begin{center}
+\textbf {\Large %\MakeUppercase
+\thesisTitle}
+
+\vspace{0pt plus1fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+{\large \textbf{Специальность: \thesisSpecialtyNumber\ "---} \textbf{\thesisSpecialtyTitle}}
+
+\ifdefined\thesisSpecialtyTwoNumber
+{\large Специальность \thesisSpecialtyTwoNumber\ "---\par \thesisSpecialtyTwoTitle}
+\fi
+
+\vspace{0pt plus1.5fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+\Large{\textbf{АВТОРЕФЕРАТ}}\par
+\vspace{0pt plus1fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+\large{\textbf{диссертации на соискание учёной степени}\par \textbf{\thesisDegree}}
+\end{center}
+
+\vspace{0pt plus4fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+{\centering\textbf{\thesisCity~--- \thesisYear}\par}
+
+\newpage
+% оборотная сторона обложки
+\thispagestyle{empty}
+Работа прошла апробацию в федеральном государственном автономном образовательном учреждении высшего образования «Московский физико-технический институт (национальный исследовательский университет)»
+
+\vspace{0.008\paperheight plus1fill}
+\noindent%
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+    \ifdefined\supervisorTwoFio
+    Научные руководители:   & \supervisorRegalia\par
+                              \ifdefined\supervisorDead
+                              \framebox{\textbf{\supervisorFio}}
+                              \else
+                              \textbf{\supervisorFio}
+                              \fi
+                              \par
+                              \vspace{0.013\paperheight}
+                              \supervisorRegalia\par
+                              \ifdefined\supervisorTwoDead
+                              \framebox{\textbf{\supervisorTwoFio}}
+                              \else
+                              \textbf{\supervisorTwoFio}
+                              \fi
+                              \vspace{0.013\paperheight}\\
+    \else
+    \textbf{Научный руководитель:}   & \textbf{\supervisorRegalia}\par
+                              \ifdefined\supervisorDead
+                              \framebox{\textbf{\supervisorFio}}
+                              \else
+                              \textbf{\supervisorFio}
+                              \fi
+                              \vspace{0.013\paperheight}\\
+    \fi
+    \vspace{0.013\paperheight} \\
+    \ifdefined\leadingOrganizationTitle
+    \textbf{Ведущая организация:}    &
+    \ifnumequal{\value{showopplead}}{0}{\vspace{6\onelineskip plus1fill}}{%
+        \textbf{\leadingOrganizationTitle}
+    }%
+    \fi
+\end{tabularx}
+\vspace{0.008\paperheight plus1fill}
+
+Защита состоится \defenseDate~на~заседании диссертационного совета \defenseCouncilNumber, созданного на базе федерального государственного автономного образовательного учреждения высшего образования <<Московский физико-технический технический институт (национальный исследовательский университет)>> (МФТИ, Физтех)
+
+\textbf{по адресу}: 141701, Московская область, г. Долгопрудный, Институтский
+переулок, д. 9.
+
+
+\vspace{0.008\paperheight plus1fill}
+С диссертацией можно ознакомиться в библиотеке МФТИ, Физтех и на сайте организации https://mipt.ru.
+
+\vspace{0.008\paperheight plus1fill}
+{Автореферат разослан \synopsisDate.}
+
+\vspace{0.008\paperheight plus1fill}
+\noindent%
+\begin{tabularx}{\textwidth}{@{}%
+>{\raggedright\arraybackslash}b{18em}@{}
+>{\centering\arraybackslash}X
+r
+@{}}
+    \textbf{Ученый секретарь}\par
+    \textbf{диссертационного совета}
+    &
+    &
+    \textbf{\defenseSecretaryFio}
+\end{tabularx}
